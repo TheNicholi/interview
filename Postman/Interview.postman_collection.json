@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "756a468e-c3e6-46d2-9086-6bc01475d49f",
+		"name": "Interview",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Find Longest Word",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    \"in\",\r\n    \"a\",\r\n    \"cat\",\r\n    \"apple\",\r\n    \"hippopotamus\",\r\n    \"good\",\r\n    \"rather\"\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50215/statistics/v1/longestword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50215",
+					"path": [
+						"statistics",
+						"v1",
+						"longestword"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
