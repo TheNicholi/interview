@@ -2,7 +2,8 @@
 	"info": {
 		"_postman_id": "756a468e-c3e6-46d2-9086-6bc01475d49f",
 		"name": "Interview",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5768397"
 	},
 	"item": [
 		{
@@ -30,6 +31,36 @@
 						"statistics",
 						"v1",
 						"longestword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Word Count",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    \"apple\",\r\n    \"pear\",\r\n    \"orange\",\r\n    \"apple\",\r\n    \"cherry\",\r\n    \"grape\",\r\n    \"pear\",\r\n    \"Apple\",\r\n    \"plum\"\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50215/statistics/v1/wordcount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50215",
+					"path": [
+						"statistics",
+						"v1",
+						"wordcount"
 					]
 				}
 			},
