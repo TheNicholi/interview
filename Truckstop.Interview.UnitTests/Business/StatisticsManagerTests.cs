@@ -36,5 +36,16 @@ namespace Truckstop.Interview.UnitTests.Business
             // Assert
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void Given_InvalidId_When_GettingVocabWord_Then_ThrowsException()
+        {
+            // Arrange
+            var invalidId = 1;
+            var target = new StatisticsManager();
+
+            // Act / Assert
+            Assert.ThrowsAsync<Exception>(() => target.GetVocabWordByIdAsync(invalidId));
+        }
     }
 }

@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
 using Truckstop.Interview.Business;
 
 namespace Truckstop.Interview.Service.Controllers
@@ -17,6 +17,7 @@ namespace Truckstop.Interview.Service.Controllers
         }
 
         [Route("longestword")]
+        [HttpPost]
         public string GetLongestWord(List<string> words)
         {
             return _statisticsManager.GetLongestWord(words);
